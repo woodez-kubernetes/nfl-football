@@ -1,0 +1,22 @@
+Team: {team}
+
+News headlines from the past week (newest first):
+{headlines}
+
+For reference only, the injury report is already recorded separately and must
+NOT be summarised back:
+{injuries}
+
+Write a short brief on what the HEADLINES above say about this team.
+
+Rules:
+- Draw every storyline from the headlines, not from the injury report.
+- Do not write storylines about who is injured, out, or questionable. Injuries
+  are already captured; repeating them here wastes the brief.
+- Do not invent players, scores, statistics, or events that are not listed.
+- Do not predict or speculate about the outcome of any upcoming game.
+- Keep each storyline to one short clause.
+
+storylines: the 3-4 non-injury developments most likely to affect how this team
+plays — roster moves, scheme or coaching changes, form, off-field events.
+momentum: one sentence on the team's current direction, from the headlines.

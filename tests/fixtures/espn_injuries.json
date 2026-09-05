@@ -1,0 +1,1936 @@
+{
+ "timestamp": "2026-09-02T21:01:07Z",
+ "status": "success",
+ "season": {
+  "year": 2026,
+  "type": 1,
+  "name": "Preseason",
+  "displayName": "2026"
+ },
+ "injuries": [
+  {
+   "id": "22",
+   "displayName": "Arizona Cardinals",
+   "injuries": [
+    {
+     "id": "635850",
+     "status": "Questionable",
+     "date": "2026-09-01T19:38Z",
+     "longComment": "Love has been tending to a high-ankle sprain since making his pro debut preseason Week 1, missing all practices and the Cardinals' final two exhibitions in the meantime. Coach Mike LaFleur told Josh Weinfuss of ESPN.com on Monday that Love is \"progressing really well\" toward being available Week 1. Nevertheless, Love's next step will be mixing into at least some drills to begin to put questions about his status for the regular-season opener on Sunday, Sept. 13 at the Chargers in the rearview mirror.",
+     "shortComment": "Love (ankle) was spotted at Tuesday's practice but wasn't suited up, Theo Mackie of The Arizona Republic reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Jeremiyah Love",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635645",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T22:42Z",
+     "longComment": "Carter will be forced to miss at least the first four games of the regular season due to a knee injury he sustained in training camp practice in early August. With rookie fourth-rounder Kaleb Proctor (knee) out for the entire season, Andrew Billings, L.J. Collier and Keveion'ta Spears will serve as the Cardinals' rotational defensive tackles behind Roy Lopez and Walter Nolen for as long as Carter is sidelined.",
+     "shortComment": "The Cardinals placed Carter (knee) on injured reserve Sunday with a designation to return, Darren Urban of the team's official site reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Zachary Carter",
+      "position": {
+       "abbreviation": "DT"
+      }
+     }
+    },
+    {
+     "id": "635632",
+     "status": "Questionable",
+     "date": "2026-08-31T22:12Z",
+     "longComment": "It's unclear when Johnson picked up the injury, though LaFleur relayed that the second-year pro is \"progressing well\" in his recovery. It doesn't seem like Johnson is in real jeopardy of missing the Cardinals' Week 1 clash against the Chargers. However, his status for the regular-season opener will be more clear once Arizona releases practice participation reports.",
+     "shortComment": "Head coach Mike LaFleur said Monday that Johnson is working through a lower-body injury, Bo Brack of GoPHNX.com reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Will Johnson",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "635600",
+     "status": "Active",
+     "date": "2026-08-31T19:30Z",
+     "longComment": "Beck suffered a ribs injury in the Hall of Fame Game earlier this month and missed the Cardinals' three official preseason contests. The third-round rookie is set to open the season as Arizona's QB3 behind starter Jacoby Brissett and veteran backup Gardner Minshew. There's a pretty good chance Beck sees action as a rookie during the regular season.",
+     "shortComment": "Coach Mike LaFleur said Beck (ribs) will return to practice Monday, Josh Weinfuss of ESPN.com reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Carson Beck",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "635517",
+     "status": "Out",
+     "date": "2026-08-31T03:56Z",
+     "longComment": "Reiman started training camp on the active/PUP list with an ankle injury, making him eligible to be placed on the Cardinals' reserve list to start the season. The tight end must now miss at least four games before becoming eligible to return to the team's active roster.",
+     "shortComment": "The Cardinals moved Reiman (ankle) from the active/PUP list to the reserve/PUP list Sunday, Darren Urban of the team's official site reports.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Tip Reiman",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635425",
+     "status": "Injured Reserve",
+     "date": "2026-08-30T21:50Z",
+     "longComment": "Conner continues to deal with complications from the foot injury that ended his 2025 campaign Week 3 of last season. Initially, when Arizona didn't place him on the active/PUP list at the start of training camp, it was an indication that he had a chance to be available for Week 1. Instead, Conner will be required to miss at least the first four games following this transaction. Considering rookie third overall pick Jeremiyah Love's status is up in the air due to a high-ankle sprain, Tyler Allgeier may be the team's lead runner in the early going, with Bam Knight backing him up.",
+     "shortComment": "The Cardinals are placing Conner (foot) on injured reserve with a designation to return, John Gambadoro of Arizona Sports 98.7 FM Phoenix reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "James Conner",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635289",
+     "status": "Active",
+     "date": "2026-08-30T14:30Z",
+     "longComment": "Long will get a fresh start after spending 2025 in a depth role for Jacksonville. After being selected by Miami in the third round of the 2021 NFL Draft, Long has been used primarily as a blocker, though he did log career highs with 12 catches, 85 yards and two touchdowns over nine regular-season contests with the Jaguars last year. Trey McBride is the clear-cut top dog at tight end for Arizona, so Long doesn't figure to have a major offensive role with his new club.",
+     "shortComment": "Long has been traded from Jacksonville to the Cardinals, Ian Rapoport of NFL Network reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Hunter Long",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635263",
+     "status": "Active",
+     "date": "2026-08-30T03:37Z",
+     "longComment": "Virgil's line was especially quiet in comparison to some of the other wideouts he's competing with a for a spot on the 53-man roster, including Simi Fehoko (5-94-2) and Jalen Brooks (4-57-0). Still, Virgil showed pretty well during the exhibition slate overall, catching 12 of 18 targets for 158 yards over four games. The fact that he was a fifth-round pick in April's NFL Draft could also help his case given that the organization might want to take a longer look at him.",
+     "shortComment": "Virgil caught three of six targets for 23 yards in a loss to Green Bay during Friday's exhibition contest.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Reggie Virgil",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635261",
+     "status": "Active",
+     "date": "2026-08-30T03:31Z",
+     "longComment": "Brooks played only 16 offensive snaps but shined during his time on the field, with his longest reception being a 20-yard connection with Gardner Minshew early in the second quarter. Brooks performed very well during the preseason, catching 15 of 17 targets for a team-leading 222 yards and one touchdown. That could go a long way to helping him secure a spot on the 53-man roster as a depth wideout option.",
+     "shortComment": "Brooks caught all four of his targets for 57 yards during Friday's exhibition loss to Green Bay.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jalen Brooks",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635116",
+     "status": "Active",
+     "date": "2026-08-29T04:11Z",
+     "longComment": "Friday's exhibition contest was Higgins' first preseason game of the year, and he was given the green light to play after clearing the league's concussion protocol. He saw most of his playing time in the first half, hauling in passes of nine and six yards on drives that both ended in scores for the Cardinals. Higgins is set to enter the regular season as the team's backup tight end to Trey McBride, given that Tip Reiman (ankle) is expected to miss the Cardinals' regular-season opener against the Chargers on Sunday, Sept. 13.",
+     "shortComment": "Higgins (concussion) caught two passes on three targets for 15 yards during Friday's 42-38 preseason loss to Green Bay.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Elijah Higgins",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635112",
+     "status": "Active",
+     "date": "2026-08-29T03:57Z",
+     "longComment": "Minshew was named the Cardinals' starter for Friday's preseason finale while Jacoby Brissett and Carson Beck (ribs) observed the game from the sidelines. Minshew was under center for Arizona's first two offensive series and led scoring drives on both, with the second ending with a 41-yard touchdown pass to Simi Fehoko. Brissett figures to be the Cardinals' starter for at least the beginning of the 2026 regular season, but it's not clear who will be the backup between Minshew and Beck.",
+     "shortComment": "Minshew completed seven of nine passes for 126 yards and a touchdown while taking a 10-yard sack during the Cardinals' 42-38 preseason loss to the Packers on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Gardner Minshew II",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "634828",
+     "status": "Active",
+     "date": "2026-08-25T23:38Z",
+     "longComment": "The deal will keep the veteran center on the Cardinals' books through the 2028 season. Froholdt has played 17 games with Arizona in all of the past three years, and he figures to continue to start as their center as long as he remains healthy.",
+     "shortComment": "Arizona signed Froholdt to a two-year, $20 million contract extension Tuesday, Ian Rapoport of ESPN and NFL Network reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Hjalte Froholdt",
+      "position": {
+       "abbreviation": "C"
+      }
+     }
+    },
+    {
+     "id": "634818",
+     "status": "Injured Reserve",
+     "date": "2026-08-25T23:07Z",
+     "longComment": "Benson underwent surgery in early October last year for a meniscus injury he suffered in the Cardinals' Week 4 loss to the Seahawks, but after returning the running back could never get right and he had trouble staying on the practice field. The 24-year-old's struggles, combined with the Cardinals' crowded running back room, caused him to be placed on waivers to begin the week, and there were no takers. If he can fix his knee troubles he could negotiate an injury settlement in an attempt to find another team to play for in 2026.",
+     "shortComment": "Benson (knee) reverted to the Cardinals' injured reserve list Tuesday, David Furones of the South Florida Sun Sentinel reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Trey Benson",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "634681",
+     "status": "Active",
+     "date": "2026-08-24T20:46Z",
+     "longComment": "Sweat opened training camp on the PUP list due to a knee injury, but he's well enough now to take part in practice. Arizona likely will ramp up his activity level over the next few weeks with the season opener on Sunday, Sept. 13 at the Chargers in mind. in 17 regular-season games during the 2025 campaign, Sweat racked up 12.0 sacks among his 30 tackles.",
+     "shortComment": "Sweat (knee) was activated from the active/PUP list Monday, Darren Urban of the Cardinals' official site reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Josh Sweat",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "634572",
+     "status": "Active",
+     "date": "2026-08-23T06:07Z",
+     "longComment": "Ryland's one miss was excusable considering the distance, and the fourth-year pro was otherwise perfect on the night. Through three preseason games, the 2023 fourth-round pick of the Patriots is 7-for-9 on field goals and has connected on all seven extra-point tries. Ryland is the only placekicker on the Cardinals' roster and will be looking to improve on the 81.5 percent success rate on field goals that he's mustered over his first two seasons in Arizona during the 2026 campaign.",
+     "shortComment": "Ryland made field goals of 38 and 31 yards, missed a 62-yarder wide right and knocked through his only extra-point try in the Cardinals' 34-13 preseason loss to the Cowboys on Saturday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Chad Ryland",
+      "position": {
+       "abbreviation": "PK"
+      }
+     }
+    },
+    {
+     "id": "634539",
+     "status": "Questionable",
+     "date": "2026-08-23T02:45Z",
+     "longComment": "Taylor-Demerson picked up the injury in the first quarter of Saturday's game, and he'll finish with one solo tackle if he's not cleared to return. Wydett Williams is in line for additional snaps in the secondary for as long as Taylor-Demerson is out of action.",
+     "shortComment": "Taylor-Demerson is questionable to return to Saturday's preseason game against the Cowboys due to a rib injury.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Dadrion Taylor-Demerson",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "634532",
+     "status": "Questionable",
+     "date": "2026-08-23T02:12Z",
+     "longComment": "If Gillikin is unable to play Saturday, then placekicker Chad Ryland would serve as the Cardinals' punter. Gillikin has been with the Cardinals since October of 2023 after starting his NFL career with the Saints in 2020.",
+     "shortComment": "Gillikin sustained a groin injury during pregame warmups and is questionable to play in Saturday's preseason game against the Cowboys, Darren Urban of the Cardinals' official site reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Blake Gillikin",
+      "position": {
+       "abbreviation": "P"
+      }
+     }
+    },
+    {
+     "id": "634264",
+     "status": "Active",
+     "date": "2026-08-21T00:44Z",
+     "longComment": "Williams tore his Achilles in December of last season and began training camp on the active/PUP list. Now that he's healthy again, the cornerback should be able to resume the starting role he filled for 10 games during the 2025 season, when he recorded 46 tackles (25 solo), five pass breakups, including an interception, and a forced fumble.",
+     "shortComment": "Williams (Achilles) was activated from the PUP list by the Cardinals on Thursday, Darren Urban of the Cardinals' official site reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Garrett Williams",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "634243",
+     "status": "Active",
+     "date": "2026-08-20T21:14Z",
+     "longComment": "After a crisp preseason Week 1 in which he competed all five of his passes for 44 yards and one touchdown last Thursday at Las Vegas, Brissett will take a seat for the Cardinals' second exhibition, ceding the start to backup QB Gardner Minshew. Meanwhile, Carson Beck \"most likely\" won't be healthy enough to play through his rib injury, meaning Minshew and Kedon Slovis will handle signal-caller duties Saturday. After inking a reworked contract with Arizona in late July, Brissett again will lead the offense come Week 1.",
+     "shortComment": "Coach Mike LaFleur said Thursday that Brissett won't suit up for Saturday's preseason game against the Cowboys, Josh Weinfuss of ESPN.com reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jacoby Brissett",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "-1987105",
+     "status": "Active",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "",
+     "shortComment": "",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Valentin Senn",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "-1987136",
+     "status": "Injured Reserve",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "ir",
+     "shortComment": "ir",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Chase Bisontis",
+      "position": {
+       "abbreviation": "G"
+      }
+     }
+    },
+    {
+     "id": "-1987137",
+     "status": "Injured Reserve",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "ir",
+     "shortComment": "ir",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Joey Blount",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "-1987195",
+     "status": "Injured Reserve",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "ir",
+     "shortComment": "ir",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Jameson Geers",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "633900",
+     "status": "Active",
+     "date": "2026-08-17T02:04Z",
+     "longComment": "The Cardinals are hoping that Love will recover in time to suit up for the regular-season opener against the Chargers on Sunday, Sept. 13, but the rookie third overall pick almost certainly won't play again during the preseason and could miss regular-season action as well since he faces a multi-week recovery timeline with less than a month to go until the season. If Love is sidelined or limited to begin the regular season, Allgeier would be in line to get the majority of backfield opportunities for the Cardinals, though James Conner (foot) or Trey Benson (knee) also could enter the mix if they recover from their respective injuries.",
+     "shortComment": "Allgeier could open the regular season as the Cardinals' primary running back, as Adam Schefter of ESPN reports that Jeremiyah Love sustained a high-ankle sprain in Thursday's preseason win over the Raiders.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Tyler Allgeier",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "633530",
+     "status": "Active",
+     "date": "2026-08-14T15:41Z",
+     "longComment": "QB Jacoby Brissett, WR Marvin Harrison and the five starting offensive linemen played all 11 snaps on Arizona's opening drive. It was only McBride who got superstar treatment, as WR Michael Wilson and RB Jeremiyah Love also took most of the snaps on the lone series for Arizona's first-team offense. McBride has far more competition for the ball this year, but he'll still be prioritized in the passing game and remains a clear favorite to lead the team in targets.",
+     "shortComment": "McBride played one snap in Thursday's 27-14 preseason win over the Raiders.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Trey McBride",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "displayName": "Kansas City Chiefs",
+   "injuries": [
+    {
+     "id": "-1997607",
+     "status": "Questionable",
+     "date": "2026-09-02T17:01Z",
+     "longComment": "questionable",
+     "shortComment": "questionable",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Josh Simmons",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "-1997596",
+     "status": "Questionable",
+     "date": "2026-09-02T17:00Z",
+     "longComment": "questionable",
+     "shortComment": "questionable",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Chris Jones",
+      "position": {
+       "abbreviation": "DT"
+      }
+     }
+    },
+    {
+     "id": "636015",
+     "status": "Active",
+     "date": "2026-09-02T16:56Z",
+     "longComment": "Walker dealt with some swelling around his ankle last week due to some cleat issues, but the star running back is back in action Wednesday with 12 days to go before the Chiefs open their season at home against the Broncos on Monday, Sept. 14. After splitting duties with Zach Charbonnet (knee) in Seattle, Walker is expected to operate as a three-down workhorse with Kansas City this season. Only fifth-round rookie Emmett Johnson and 2025 seventh-rounder Brashard Smith round out the depth chart behind Walker.",
+     "shortComment": "Walker (ankle) was a full participant in Wednesday's practice, Pete Sweeney of The Kansas City Star reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Kenneth Walker III",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635818",
+     "status": "Active",
+     "date": "2026-09-01T15:51Z",
+     "longComment": "The Chiefs had final roster cutdowns Sunday and waived veteran Emari Demercado, clearing a path to a role for Johnson. The rookie out of Nebraska impressed throughout training camp and the preseason. Kansas City also has Brashard Smith on the roster, but Johnson may be the handcuff to target for fantasy managers.",
+     "shortComment": "Johnson is in line to be Kenneth Walker's backup for the Chiefs this season.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Emmett Johnson",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635736",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T01:16Z",
+     "longComment": "Hanson was waived/injured Sunday and subsequently went unclaimed on waivers. Since he consequently reverted to IR, he'll need to sit out the entire 2026 season unless he works out an injury settlement with the Chiefs.",
+     "shortComment": "Hanson (undisclosed) reverted to Kansas City's injured reserve Monday, Matt Derrick of ChiefsDigest.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "C.J. Hanson",
+      "position": {
+       "abbreviation": "G"
+      }
+     }
+    },
+    {
+     "id": "635677",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T23:43Z",
+     "longComment": "Smith was waived with an injury designation on Sunday. The running back cleared waivers and will now spend the entirety of the 2026 regular season on injured reserve unless he is waived with an injury settlement.",
+     "shortComment": "Smith (undisclosed) reverted to the Chiefs' injured-reserve list Monday, Matt Derrick of ChiefsDigest.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "EJ Smith",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635673",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T23:38Z",
+     "longComment": "The Chiefs waived Oladokun with an injury designation Sunday, and the quarterback went unclaimed on waivers. The 28-year-old will now spend the entirety of the 2026 regular season on IR unless he is waived with an injury settlement.",
+     "shortComment": "Oladokun (undisclosed) reverted to the Chiefs' injured reserve list Monday, Matt Derrick of ChiefsDigest.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Chris Oladokun",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "635580",
+     "status": "Out",
+     "date": "2026-08-31T17:45Z",
+     "longComment": "Norman-Lott was placed on the active/PUP list ahead of training camp, and he did not appear in a preseason game as he continues to recover from a torn ACL that he suffered in October. The defensive lineman will now be forced to miss at least four contests to begin the regular season, and in his absence, rookie first-rounder Peter Woods will handle the primary reserve role at defensive tackle behind Chris Jones and Khyiris Tonga.",
+     "shortComment": "Norman-Lott (knee) was moved to the reserve/PUP list by the Chiefs on Sunday.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Omarr Norman-Lott",
+      "position": {
+       "abbreviation": "DT"
+      }
+     }
+    },
+    {
+     "id": "635579",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T17:40Z",
+     "longComment": "Holiday is dealing with an undisclosed injury, and he did not play during the preseason. The wide receiver will now be forced to miss the entire 2026 campaign while on IR, unless he is able to reach an injury settlement with Kansas City.",
+     "shortComment": "Holiday (undisclosed) was placed on injured reserve by the Chiefs on Sunday.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Jimmy Holiday",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635280",
+     "status": "Active",
+     "date": "2026-08-30T04:29Z",
+     "longComment": "Pounds made a positive impression during the preseason slate, per Garafolo, which put him on KC's radar. The 330-pounder out of Ole Miss should provide the Chiefs depth along the offensive line if he sticks with the club.",
+     "shortComment": "Baltimore traded Pounds to the Chiefs on Saturday in exchange for a conditional sixth-round draft pick in 2028, Mike Garafolo of NFL Network reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Diego Pounds",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "635239",
+     "status": "Active",
+     "date": "2026-08-29T23:36Z",
+     "longComment": "Rice and some of Kansas City's key offensive starters got to log some reps during the first quarter before being pulled. Though he didn't produce any offensive output, it's notable that Rice took part in his first game action since he landed on IR due to a concussion late last December. Rice had a tumultuous offseason, as he spent some time in jail due to a probation violation and also had a minor procedure on his right knee, but he appears healthy and isn't expected to face NFL discipline for the legal issue. As such, he can be penciled in as the Chiefs' top WR heading into Week 1 versus Denver on Monday, Sept. 14.",
+     "shortComment": "Rice played offensive 10 snaps in Kansas City's 9-9 exhibition tie with the Seahawks on Friday and did not record any targets or touches.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Rashee Rice",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635178",
+     "status": "Questionable",
+     "date": "2026-08-29T17:08Z",
+     "longComment": "Mahomes said a week ago he was \"extremely confident\" he would be ready for Kansas City's season opener, and the latest report keeps him on track to do so. It's unclear how close he is to 100 percent, but it's growing more and more likely that the torn left ACL he sustained last December will not cost him any action during the 2026 campaign.",
+     "shortComment": "Mahomes (knee) is on track to start Week 1 against the Broncos, Ian Rapoport of NFL Network reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Patrick Mahomes",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "635127",
+     "status": "Active",
+     "date": "2026-08-29T04:45Z",
+     "longComment": "The veteran backup tight end will close out preseason play with only the one reception for 10 yards he recorded in the opener against the Rams. Despite the quiet exhibition slate, Gray is ticketed to reprise his No. 2 tight end role behind Travis Kelce once again in 2026. That netted him a 21-178-0 line on 37 targets over 16 regular-season games a year ago.",
+     "shortComment": "Gray failed to bring in his only target in the Chiefs' 9-9 preseason tie with the Seahawks on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Noah Gray",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635126",
+     "status": "Active",
+     "date": "2026-08-29T04:42Z",
+     "longComment": "The fifth-year pro drew a start and matched his one catch from preseason Week 2, albeit while gaining six more yards than in that performance. Thornton somewhat revived his career during his 2025 Chiefs debut campaign by averaging 23.1 yards per reception on his 19 catches and recording three scoring grabs, and he projects to open the season in the prominent role of No. 3 receiver in what should be a dynamic air attack.",
+     "shortComment": "Thornton secured one of two targets for 11 yards in the Chiefs' 9-9 preseason tie with the Seahawks on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Tyquan Thornton",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635115",
+     "status": "Active",
+     "date": "2026-08-29T04:05Z",
+     "longComment": "The rookie seventh-round pick got an extended opportunity Friday and made relatively good use of it, although his 5.8 yards per attempt underscore that Nussmeier largely played things close to the vest when dropping back. The LSU product finished preseason having completed 44 of 70 passes for 370 yards with no touchdowns and one interception, and it remains to be seen if he's locked in the No. 3 quarterback role over Chris Oladokun.",
+     "shortComment": "Nussmeier completed 22 of 34 passes for 198 yards with no touchdowns and one interception and rushed once for one yard in the Chiefs' 9-9 preseason tie with the Seahawks on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Garrett Nussmeier",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "635113",
+     "status": "Active",
+     "date": "2026-08-29T04:02Z",
+     "longComment": "The rookie fifth-round pick didn't make his catch until the opening possession of the second half. Allen was busy this preseason with six receptions on 12 targets, but those netted a modest 39 yards. Nevertheless, the Cincinnati product is likely locked into a reserve receiver role to open the 2026 season.",
+     "shortComment": "Allen brought in one of two targets for 12 yards in the Chiefs' 9-9 preseason tie with the Seahawks on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Cyrus Allen",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635102",
+     "status": "Active",
+     "date": "2026-08-29T03:32Z",
+     "longComment": "The speedster made his preseason debut after overcoming a shoulder sprain that had plagued him for multiple weeks. Now apparently healthy, Worthy heads into his third season looking to build on the promise of his 2024 rookie campaign -- when he posted a 59-638-6 line across 17 regular-season games -- and atone for a lackluster 2025 season when he made just one trip to the end zone on 42 catches and missed three games.",
+     "shortComment": "Worthy (shoulder) failed to bring in his only target in the Chiefs' 9-9 preseason tie with the Seahawks on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Xavier Worthy",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635100",
+     "status": "Active",
+     "date": "2026-08-29T03:28Z",
+     "longComment": "Kelce was on the other end of starting quarterback Garrett Nussmeier's first pass of the night, an eight-yard completion that took the ball to midfield on Kansas City's opening possession. Kelce thus was able to record his only stats of the preseason in the brief cameo, and he'll now turn his attention to a Week 1 Monday night home showdown against the Broncos on Sept. 14 that he'll hope to play with Patrick Mahomes (knee) as his quarterback.",
+     "shortComment": "Kelce secured his only target for eight yards in Friday's 9-9 preseason tie with the Seahawks.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Travis Kelce",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "634861",
+     "status": "Active",
+     "date": "2026-08-26T01:04Z",
+     "longComment": "Ezeudu's tenure with the Giants has come to an end after he appeared in 33 games with the team across three seasons. He will now provide additional depth along the interior of the offensive line for Kansas City.",
+     "shortComment": "The Giants traded Ezeudu (leg) to the Chiefs for a 2028 seventh-round pick Tuesday, NFL reporter Jordan Schultz reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Joshua Ezeudu",
+      "position": {
+       "abbreviation": "G"
+      }
+     }
+    },
+    {
+     "id": "634820",
+     "status": "Injured Reserve",
+     "date": "2026-08-25T23:12Z",
+     "longComment": "Caldwell hyperextended his left knee during Wednesday's practice and was promptly waived with an injury designation. The wide receiver will now spend the entirety of the 2026 regular season on injured reserve unless he is waived with an injury settlement.",
+     "shortComment": "Caldwell (knee) reverted to the Chiefs' injured reserve list Tuesday, Charles Goldman of AtoZSports.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Jeff Caldwell",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "634560",
+     "status": "Active",
+     "date": "2026-08-23T03:55Z",
+     "longComment": "Fields drew the start due to Patrick Mahomes being inactive and got his night off to a sluggish start, moving the Chiefs just 30 yards on 12 plays over the first three drives. However, the veteran signal-caller found his rhythm in the second quarter, when he led Kansas City to a field goal via an 11-play, 43-yard march on what turned out to be his final possession. Fields is set to operate as the No. 2 quarterback come the regular season, serving as a highly mobile and experienced emergency option should injury befall Mahomes again.",
+     "shortComment": "Fields completed nine of 12 passes for 64 yards with no touchdowns or interceptions and rushed once for 15 yards in the Chiefs' 16-15 preseason loss to the Buccaneers on Saturday. He also committed a fumble recovered by Kansas City.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Justin Fields",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "634513",
+     "status": "Questionable",
+     "date": "2026-08-22T23:54Z",
+     "longComment": "Gilman may have picked up the injury during pregame warmups, which will prevent him from suiting up for Saturday's exhibition contest. He'll undergo more tests to determine the severity of the injury, but it could prevent him from playing in the Chiefs' preseason finale against the Seahawks this Friday. Xavier Nwankpa and Jaden Hicks will start at safety in Gilman's absence, with Christian Roland-Wallace sliding in as the slot corner.",
+     "shortComment": "Gilman has been ruled out for the rest of Saturday's preseason game against the Buccaneers due to a back injury.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Alohi Gilman",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "634365",
+     "status": "Injured Reserve",
+     "date": "2026-08-22T00:32Z",
+     "longComment": "Waletzko did not get claimed after the Chiefs waived him with an undisclosed injury Thursday, and he's now in line to spend the entire 2026 on IR. He last suited up for a regular-season contest back in 2024 with the Cowboys.",
+     "shortComment": "Waletzko (undisclosed) reverted from waivers to Kansas City's injured reserve list Friday, Aaron Wilson of KPRC 2 Houston reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Matt Waletzko",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "634280",
+     "status": "Questionable",
+     "date": "2026-08-21T01:43Z",
+     "longComment": "The defensive end might even be able to return for Kansas City's regular-season opener against Denver on Sept. 14, per Nate Taylor of ESPN.com. Gillotte strained his hamstring during a training camp session in late July, returned a little over two weeks later and then ruptured his plantar fascia during a drill. The 2025 third-round pick recorded 38 tackles (14 solo), including 1.5 sacks, in a rotational role as a rookie.",
+     "shortComment": "Gillotte has a ruptured plantar fascia, but the injury is not considered serious, Matt Derrick of ChiefsDigest.com reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Ashton Gillotte",
+      "position": {
+       "abbreviation": "DE"
+      }
+     }
+    },
+    {
+     "id": "634242",
+     "status": "Active",
+     "date": "2026-08-20T20:37Z",
+     "longComment": "Smith has his work cut out for him to earn a role on offense, though the pecking order between Emari Demercado, Emmett Johnson and Smith is far from set in stone behind lead back Kenneth Walker. Even if Smith fails to move up the depth chart, he has a decent chance of making the 53-man roster thanks to his contributions on special teams. General manager Brett Veach said that Smith \"adds value as a dynamic speed element and his return game as a punt kick returner.\"",
+     "shortComment": "Smith is listed as the No. 4 running back on the unofficial depth chart Kansas City released ahead of the preseason, Pete Grathoff of the Kansas City Star reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Brashard Smith",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "displayName": "New England Patriots",
+   "injuries": [
+    {
+     "id": "635841",
+     "status": "Questionable",
+     "date": "2026-09-01T18:14Z",
+     "longComment": "Henderson made an early departure from practice last Monday, which has sidelined him in the meantime. Reiss mentioned that Henderson was spotted in the locker room this Tuesday and seemed to be \"walking normally,\" but the Patriots will take it easy on the second-year pro as a Week 1 road showdown with the Seahawks approaches next Wednesday, Sept. 9.",
+     "shortComment": "Henderson continues to rehab a right ankle injury and hasn't been cleared for full participation in practice, Mike Reiss of ESPN.com reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "TreVeyon Henderson",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635826",
+     "status": "Active",
+     "date": "2026-09-01T16:22Z",
+     "longComment": "The Patriots made several splash moves this offseason, including the additions of A.J. Brown and Romeo Doubs, that have garnered most of the headlines. Henry, though, is going to be a staple. The veteran has caught 60-or-more passes from Drake Maye in each of the last two seasons. Daniels notes that Henry is particularly crucial due to the lack of experienced options behind him on the depth chart. Rookie Eli Raridon and journeyman Cameron Latu are the next two options for the Patriots at tight end.",
+     "shortComment": "Henry is still expected to be a key part of the Patriots offense this season, Mark Daniels of MassLive.com reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Hunter Henry",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635783",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T04:27Z",
+     "longComment": "Baringer suffered an injury during the Patriots' 24-21 preseason win over the Eagles and has not practiced since the incident. The punter will need to miss the first four games of the regular season on IR before he is eligible to return to the active roster. The Patriots signed punter Mitch Wishnowsky to the practice squad Monday, and he's expected to fill in during Baringer's absence.",
+     "shortComment": "The Patriots placed Baringer (undisclosed) on injured reserve Monday.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Bryce Baringer",
+      "position": {
+       "abbreviation": "P"
+      }
+     }
+    },
+    {
+     "id": "635782",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T04:23Z",
+     "longComment": "Jacobs participated in the first two preseason games for the Patriots before succumbing to injury, accumulating eight tackles (four solo). The linebacker will need to miss the first four games of the regular season on IR before he is eligible to return to the active roster. While Jacobs is sidelined, Darius Muasau will likely be the first depth option behind starting inside linebackers Christian Elliss and Robert Spillane.",
+     "shortComment": "The Patriots placed Jacobs (undisclosed) on injured reserve Monday.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Khalil Jacobs",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "635770",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T03:47Z",
+     "longComment": "Iton missed all of last season while on IR due to a hip injury, though it's unclear if his current issue is related. The Rutgers product did play in all three of the Patriots' preseason contests, but he was waived/injured Sunday. Since he cleared waivers and reverted to IR, Iton will need to sit out the entire 2026 campaign unless he reaches an injury settlement with New England.",
+     "shortComment": "Iton (undisclosed) reverted to New England's injured reserve Monday, Mark Daniels of MassLive.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Isaiah Iton",
+      "position": {
+       "abbreviation": "DT"
+      }
+     }
+    },
+    {
+     "id": "635768",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T03:41Z",
+     "longComment": "Butler was waived/injured Sunday and subsequently cleared waivers. As such, he's been placed on season-ending IR. However, Butler could still be eligible to play this season if he works out an injury settlement with New England.",
+     "shortComment": "Butler (undisclosed) reverted to the Patriots' IR on Monday, Mark Daniels of MassLive.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Eric Butler",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "635766",
+     "status": "Active",
+     "date": "2026-09-01T03:35Z",
+     "longComment": "The Giants waived Muasau on Sunday. The Patriots claimed the 25-year-old to slot into the 53-man roster as one of the primary backups at inside linebacker. Muasau will likely see relief snaps behind Christian Elliss and Robert Spillane throughout the regular season. The Patriots released K.J. Britt in a corresponding move.",
+     "shortComment": "The Patriots claimed Muasau off waivers Monday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Darius Muasau",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "635764",
+     "status": "Active",
+     "date": "2026-09-01T03:29Z",
+     "longComment": "The Eagles waived Latu on Sunday, but the tight end will not become a free agent. With Julian Hill (knee) done for the season, the Patriots needed additional depth at tight end behind Hunter Henry. The team released K.J. Britt in a corresponding move.",
+     "shortComment": "The Patriots claimed Latu off waivers Monday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Cameron Latu",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "635674",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T23:41Z",
+     "longComment": "Bryant suffered an ankle injury during the Patriots' second preseason game Saturday, Aug. 22 against the Eagles. The injury is severe enough for the second-year pro to open the regular season on IR, meaning he'll be required to miss at least the first four games of the regular season. Bryant did not start in any of the 12 regular-season games he appeared in last year, and in his absence, the likes of Caleb Lomu, Walter Rouse and Dametrious Crownover will provide depth at offensive tackle behind Morgan Moses and Will Campbell.",
+     "shortComment": "The Patriots placed Bryant (ankle) on injured reserve with a designation to return Sunday.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Marcus Bryant",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "635589",
+     "status": "Out",
+     "date": "2026-08-31T18:30Z",
+     "longComment": "Landry spent the entirety of training camp and the preseason on the active/PUP list with an undisclosed injury. The 30-year-old will now be sidelined for at least four contests to open the 2026 campaign, and the earliest he'd be able to return to action is Week 5 against the Raiders on Oct. 11. In his absence, Elijah Ponder is a top candidate to start opposite of Dre'Mont Jones at outside linebacker.",
+     "shortComment": "Landry (undisclosed) was moved to the reserve/PUP list by the Patriots on Sunday.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Harold Landry III",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "635460",
+     "status": "Active",
+     "date": "2026-08-30T23:00Z",
+     "longComment": "Rouse operated in a reserve role with Minnesota for two seasons after being selected by the team in the sixth round of the 2024 NFL Draft. He appeared in one game during his rookie season before he played 88 offensive snaps and 32 with the special-teams unit over eight contests in 2025. Rouse has spent time at both offensive tackle and offensive guard, and he'll likely operate as an extreme depth option with the Patriots this season.",
+     "shortComment": "Rouse was traded from the Vikings to the Patriots on Sunday, Ian Rapoport of ESPN and NFL Network reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Walter Rouse",
+      "position": {
+       "abbreviation": "OL"
+      }
+     }
+    },
+    {
+     "id": "635457",
+     "status": "Out",
+     "date": "2026-08-30T22:51Z",
+     "longComment": "It was reported last Thursday that Schooler was close to being activated off the NFI list prior to cutdown day. The free safety is evidently not quite ready to rejoin the team and will now need to miss at least the first four weeks of the regular season. Kevin Byard is set to open the Week 1 game against the Seahawks as the starting free safety for the Patriots.",
+     "shortComment": "Schooler (undisclosed) will begin the 2026 regular season on the Patriots' reserve/non-football injury list, Doug Kyed of the Boston Herald reports.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Brenden Schooler",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "635182",
+     "status": "Active",
+     "date": "2026-08-29T17:34Z",
+     "longComment": "Given that the Patriots exchanged draft capital for him, Kiner could now slot in as the No. 3 running back behind starters Rhamondre Stevenson and TreVeyon Henderson (ankle). Henderson is expected to be available for the Patriots' Week 1 matchup with the Seahawks, but if he does happen to miss time Kiner could be the next man up. The 24-year-old played in four career games for the Cardinals, logging 12 rush attempts for 58 yards.",
+     "shortComment": "The Cardinals traded Kiner to the Patriots on Saturday in exchange for a 2028 seventh-round pick, Adam Schefter of ESPN reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Corey Kiner",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635066",
+     "status": "Active",
+     "date": "2026-08-29T01:23Z",
+     "longComment": "Doubs was among numerous Patriots projected regular-season starters who were held out of Thursday's contest. The veteran wideout didn't play at all during the exhibition slate but drew praise during training camp for his work during practices. Doubs is slated for a major role in his first campaign with New England, as he's set to start alongside A.J. Brown at the WR position.",
+     "shortComment": "Doubs didn't suit up in Thursday's preseason loss to the Browns.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Romeo Doubs",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635059",
+     "status": "Active",
+     "date": "2026-08-29T00:52Z",
+     "longComment": "The Patriots rested their projected regular-season starters Thursday, so Stevenson's absence was par for the course. He didn't see any game action during the preseason slate but appears back to full health after dealing with a minor undisclosed injury in late July. Stevenson and TreVeyon Henderson, who is dealing with an ankle injury but is expected to be ready for Week 1, are slated to share backfield duties for New England during the upcoming campaign.",
+     "shortComment": "Stevenson didn't play in a preseason loss to the Browns on Thursday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Rhamondre Stevenson",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635053",
+     "status": "Active",
+     "date": "2026-08-29T00:40Z",
+     "longComment": "Unsurprisingly, Maye was among the plethora of New England starters who didn't see action in the team's final exhibition game. The star quarterback ended up sitting out all three of the team's preseason contests as he prepares for the regular season. Maye's first chance to get into game action with new top wideouts A.J. Brown and Romeo Doubs will take place Week 1 versus Seattle on Wednesday, Sept. 9.",
+     "shortComment": "Maye sat out Thursday's preseason loss to Cleveland.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Drake Maye",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "634992",
+     "status": "Active",
+     "date": "2026-08-28T04:25Z",
+     "longComment": "Morton entered the game in the first quarter after Tommy DeVito played New England's first two drives. Morton, a rookie seventh-round pick out of Texas Tech, promptly threw an interception on his first pass and was later picked off again in the fourth quarter. Morton is clearly behind Drake Maye and DeVito on New England's quarterback depth chart heading into the regular season.",
+     "shortComment": "Morton completed 18 of 28 passes for 123 yards, no touchdowns and two interceptions in Thursday's 37-13 preseason loss to the Browns. He also rushed twice for 18 yards.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Behren Morton",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "634973",
+     "status": "Active",
+     "date": "2026-08-28T03:13Z",
+     "longComment": "Williams scored New England's only touchdown on a 45-yard catch in the first quarter. The 2025 third-round pick has had an outstanding preseason, finding the end zone in each of the Patriots' three preseason games. Williams has earned a spot on the 53-man roster heading into the regular season, but he could have a hard time carving out consistent playing time in a WR room led by offseason additions A.J. Brown and Romeo Doubs, with DeMario Douglas and Mack Hollins also jostling for snaps.",
+     "shortComment": "Williams caught both of his targets for 55 yards and a touchdown in Thursday's 37-13 preseason loss to the Browns.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Kyle Williams",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "634952",
+     "status": "Active",
+     "date": "2026-08-27T23:49Z",
+     "longComment": "Brown thus won't see any game action during this exhibition season. He's expected to serve as the top target for QB Drake Maye in 2026, considering the key asset (a 2028 first-round pick) sent to Philadelphia to gain his services. In seven campaigns as a pro, Brown has surpassed 1,000 receiving yards six times while racking up 58 total TDs in 105 regular-season contests.",
+     "shortComment": "Brown isn't in uniform for Thursday's preseason game in Cleveland, Evan Lazar of the Patriots' official site reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "A.J. Brown",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "634692",
+     "status": "Active",
+     "date": "2026-08-24T23:10Z",
+     "longComment": "New England also landed a draft pick in the deal with Houston, per Pelissero. Reed was a sixth-round selection of the Texans in 2025, but he only played in seven regular-season games as a rookie due to two stints on IR. He should have a chance to compete for a depth and special-teams role in New England.",
+     "shortComment": "Reed was traded from the Texans to the Patriots on Monday in exchange for wide receiver Kayshon Boutte, Tom Pelissero of Netflix reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jaylen Reed",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "634657",
+     "status": "Active",
+     "date": "2026-08-24T16:46Z",
+     "longComment": "The Patriots got one of the key pieces of their defense back on the practice field Monday, as Gonzalez was a full participant after recovering from an ankle issue. The star cornerback, who remains in negotiations with the team on a contract extension, missed several practices and both of the first two preseason games due to the injury, but he now appears to have moved past the issue.",
+     "shortComment": "Gonzalez (ankle) was a full participant in Monday's practice, Andrew Callahan of the Boston Herald reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Christian Gonzalez",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "634552",
+     "status": "Active",
+     "date": "2026-08-23T03:33Z",
+     "longComment": "Borregales had a shaky preseason opener against the Colts where he misfired on three field-goal attempts, but the UM product was able to convert every opportunity presented to him Saturday. Borregales does ostensibly have some slack after posting respective 84.4 percent and 96.4 percent success rates on field goals and PATs as a rookie in 2025, following up those solid numbers by making four of six field-goal attempts and all seven extra-point tries in New England's four-game postseason run.",
+     "shortComment": "Borregales made his only field-goal attempt, from 41 yards out, and connected on all three extra-point tries in the Patriots' 24-21 preseason win over the Eagles on Saturday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Andy Borregales",
+      "position": {
+       "abbreviation": "PK"
+      }
+     }
+    },
+    {
+     "id": "-1987289",
+     "status": "Injured Reserve",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "ir",
+     "shortComment": "ir",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Myles Montgomery",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "-1987058",
+     "status": "Active",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "",
+     "shortComment": "",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Carlton Davis III",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "-1987092",
+     "status": "Active",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "",
+     "shortComment": "",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Quintayvious Hutchins",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "displayName": "Seattle Seahawks",
+   "injuries": [
+    {
+     "id": "635999",
+     "status": "Active",
+     "date": "2026-09-02T14:31Z",
+     "longComment": "After letting Super Bowl LX MVP Kenneth Walker walk in free agency, the Seahawks will be counting on Price -- the No. 32 overall pick in April's draft -- as well as George Holani and Emanuel Wilson (hamstring) to lead the backfield while Zach Charbonnet (knee) is out for at least the first four games of the season. Walker's tough running combined with Charbonnet's skills on passing downs helped ensure that defenses couldn't devote more resources to shutting down Smith-Njigba, who blossomed into arguably the NFL's top wideout in 2025. After taking most of his snaps out of the slot in his first two seasons, Smith-Njigba thrived while transitioning into more of a perimeter role, compiling a massive 119-1,793-10 receiving line over 17 games on his way to winning Offensive Player of the Year honors. A league-high 32.6 percent target share played a part in Smith-Njigba achieving his lofty production, but even if supporting pass catchers such as Rashid Shaheed and AJ Barner are more involved in 2026, Smith-Njigba could avoid a major dip in production if the Seahawks lean more heavily on the passing game as a whole. The Seahawks ranked third in the NFL with a 49.7 percent run rate in 2025, and despite Smith-Njigba's early praise for Price, it would still be surprising if the rookie was trusted right away to handle the sort of workloads that Walker and Charbonnet previously shouldered.",
+     "shortComment": "Smith-Njigba said Tuesday in his appearance on ESPN's \"SportsCenter\" that rookie running back Jadarian Price had \"a great training camp\" and will help relieve pressure on the passing game in 2026.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jaxon Smith-Njigba",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635777",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T04:00Z",
+     "longComment": "The offensive tackle was waived/injured Sunday. Kight will need to reach an injury settlement with Seattle to have a chance to play in 2026.",
+     "shortComment": "Kight (undisclosed) reverted to the Seahawks' injured-reserve list Monday, according to the NFL's official transaction log.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Amari Kight",
+      "position": {
+       "abbreviation": "OT"
+      }
+     }
+    },
+    {
+     "id": "635773",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T03:53Z",
+     "longComment": "The linebacker was waived/injured by Seattle on Sunday. Smith will be out for the season unless he reaches an injury settlement with the team.",
+     "shortComment": "Smith (undisclosed) reverted to the Seahawks' injured-reserve list Monday, according to the NFL's official transaction log.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Aaron Smith",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "635771",
+     "status": "Injured Reserve",
+     "date": "2026-09-01T03:49Z",
+     "longComment": "The linebacker was waived with an injury designation Sunday. Echols will need to reach an injury settlement with the Seahawks to have a chance to play in 2026.",
+     "shortComment": "Echols (undisclosed) cleared waivers and reverted to injured reserve Monday, per the NFL's official transaction log.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Power Echols",
+      "position": {
+       "abbreviation": "LB"
+      }
+     }
+    },
+    {
+     "id": "635623",
+     "status": "Injured Reserve",
+     "date": "2026-08-31T21:39Z",
+     "longComment": "Charles was traded to Seattle in late May, and he suffered an undisclosed injury at some point during the preseason. The wide receiver will now be sidelined for at least four contests to open the regular season, and the earliest he'd be able to return to action is Week 5 against the 49ers on Oct. 11.",
+     "shortComment": "Charles (undisclosed) was placed on injured reserve by the Seahawks on Sunday with a designation to return, John Boyle of the team's official website reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Irv Charles",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "635463",
+     "status": "Out",
+     "date": "2026-08-30T23:06Z",
+     "longComment": "This move was merely procedural, as Charbonnet is still far away from returning to action following the ACL tear he suffered in his left knee in the divisional round on Jan. 17. In any case, he'll be sidelined for at least the first four contests of the season, while some combination of rookie first-round pick Jadarian Price and holdover George Holani will pace Seattle's backfield Week 1 and beyond.",
+     "shortComment": "The Seahawks moved Charbonnet (knee) from the active/PUP list to the reserve/PUP list Sunday, Curtis Crabtree of Fox 13 Seattle reports.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Zach Charbonnet",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "635451",
+     "status": "Active",
+     "date": "2026-08-30T22:41Z",
+     "longComment": "Smith went undrafted in 2026 but landed a deal with the Chargers. While he has an uphill climb before earning regular snaps in Seattle, he may move up the depth chart if he continues to impress heading into the 2026-27 campaign.",
+     "shortComment": "Smith was acquired by the Seahawks on Sunday, Kris Rhim of ESPN.com reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Avery Smith",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "635294",
+     "status": "Active",
+     "date": "2026-08-30T15:21Z",
+     "longComment": "Myers converted a 46-yard attempt in the first quarter but missed a PAT in the fourth quarter to keep Seattle's lead at 9-6. After the Chiefs tied the game, Myers missed an opportunity to give the Seahawks their only win of the preseason by pushing a 52-yard field-goal attempt wide right on the final play of the game. Myers missed his only field-goal attempt in Seattle's preseason opener against the Cowboys and went 1-for-2 on field-goal attempts while missing a PAT in the Seahawks' second preseason game. His preseason inaccuracy represents a significant departure from Myers' strong performance during the 2025 regular season, when he converted 41 of his league-high 48 field-goal attempts.",
+     "shortComment": "Myers went 1-for-2 on field-goal attempts and missed his lone PAT in Friday's 9-9 preseason tie against the Chiefs.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jason Myers",
+      "position": {
+       "abbreviation": "PK"
+      }
+     }
+    },
+    {
+     "id": "635251",
+     "status": "Active",
+     "date": "2026-08-30T02:26Z",
+     "longComment": "Milroe played every offensive snap for Seattle, with both Sam Darnold and Drew Lock resting on the sideline. Milroe led the Seahawks on a seven-play scoring drive that ended in a field goal during the first quarter and a 10-play drive that ended with his touchdown pass to Nick Vannett in the third. That TD was his first of a relatively underwhelming preseason. Milroe is locked in behind Darnold and Lock once the regular season starts, so he could regularly serve as Seattle's emergency third QB on gamedays.",
+     "shortComment": "Milroe completed 16 of 26 pass attempts for 223 yards and one touchdown without any interceptions in Friday's 9-9 preseason tie versus Kansas City.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jalen Milroe",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "635200",
+     "status": "Out",
+     "date": "2026-08-29T20:22Z",
+     "longComment": "It was reported earlier this month that Arnold would be joining the Seahawks, and the move became official Saturday. Per Ian Rapoport of ESPN and NFL Network, Arnold will be placed on the commissioner's exempt list while he works through legal issues stemming from an incident in June, so it's unclear when he will be ready to see action with his new team.",
+     "shortComment": "Arnold signed a contract with the Seahawks on Saturday.",
+     "type": {
+      "id": "4",
+      "name": "INJURY_STATUS_OUT",
+      "description": "out",
+      "abbreviation": "O"
+     },
+     "athlete": {
+      "displayName": "Terrion Arnold",
+      "position": {
+       "abbreviation": "CB"
+      }
+     }
+    },
+    {
+     "id": "635131",
+     "status": "Active",
+     "date": "2026-08-29T04:55Z",
+     "longComment": "The second-year tight end had recorded a 36-yard touchdown grab in Sunday's exhibition against the Titans, and Arroyo followed that up with another big play Friday on his 24-yard grab during Seattle's second possession. Arroyo is expected to operate as the No. 2 pass-catching option at tight end behind AJ Barner, but veteran Eric Saubert is expected to see his fair share of snaps as well thanks to his blocking prowess.",
+     "shortComment": "Arroyo secured his only target for a 24-yard reception in the Seahawks' 9-9 preseason tie with the Chiefs on Friday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Elijah Arroyo",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "634947",
+     "status": "Questionable",
+     "date": "2026-08-27T23:27Z",
+     "longComment": "Horton has been sidelined with an undisclosed injury for over a week, but head coach Mike Macdonald shed some light on the situation Thursday, explaining that the wide receiver isn't dealing with a significant injury. With fellow wideout Jake Bobo (knee) already sidelined for the year, Horton will have an opportunity to elevate into a more substantial role with Seattle in his second campaign with the team.",
+     "shortComment": "Horton (undisclosed) is not dealing with a long-term injury, Corbin K. Smith of SI.com reports.",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Tory Horton",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "634934",
+     "status": "Active",
+     "date": "2026-08-27T18:48Z",
+     "longComment": "Price has practiced for over a week since recovering from a lower-body injury, so Friday's absence will not be injury-related. However, it is notable that the rookie will not make his first appearance in an NFL uniform until Week 1. It remains to be seen what Seattle's depth chart will look like heading into the regular season, but with Zach Charbonnet (knee) unavailable Price figures to fill a key role out of the gate in a Seattle backfield that also includes George Holani and Emanuel Wilson (hamstring).",
+     "shortComment": "Price will not play in Friday's preseason finale against the Chiefs, Brady Henderson of ESPN.com reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Jadarian Price",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "634929",
+     "status": "Active",
+     "date": "2026-08-27T14:59Z",
+     "longComment": "The 32-year-old and three-time Pro Bowler has been a force up front since joining the Seahawks in 2023, and the latest pact -- which includes $56 million guaranteed, per Adam Schefter of ESPN -- will keep him in Seattle for three more years. He figures to remain one of the top contributors on a Seahawks defense that is one of the top units to target in fantasy drafts.",
+     "shortComment": "Williams has agreed to a three-year, $90 million contract extension with the Seahawks, Ian Rapoport of ESPN and NFL Network reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Leonard Williams",
+      "position": {
+       "abbreviation": "DT"
+      }
+     }
+    },
+    {
+     "id": "634841",
+     "status": "Injured Reserve",
+     "date": "2026-08-26T00:13Z",
+     "longComment": "Richman suffered a serious right leg injury during Sunday's preseason loss to the Titans. The offensive lineman will now miss the entirety of the 2026 regular season unless he is waived with an injury settlement. The second-year player maintained his depth role on the offensive line throughout his rookie season and will have to fight for the same status in 2027.",
+     "shortComment": "The Seahawks placed Richman (leg) on injured reserve Tuesday, Brady Henderson of ESPN.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Mason Richman",
+      "position": {
+       "abbreviation": "G"
+      }
+     }
+    },
+    {
+     "id": "634838",
+     "status": "Injured Reserve",
+     "date": "2026-08-26T00:06Z",
+     "longComment": "Clark fractured his ankle in Sunday's 19-16 preseason loss to the Titans and will need to miss multiple months. The safety's placement on IR means he will now miss the entirety of the 2026 regular season unless he is waived with an injury settlement. The rookie second-rounder will likely stick it out on injured reserve and look to make his NFL debut in 2027.",
+     "shortComment": "The Seahawks placed Clark (ankle) on injured reserve Tuesday, Brady Henderson of ESPN.com reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Bud Clark",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "634629",
+     "status": "Active",
+     "date": "2026-08-24T04:39Z",
+     "longComment": "Lock started with Sam Darnold resting, and the veteran backup posted a sharp performance as Seattle's backups outplayed Tennessee's starters. All 16 of the Seahawks' points came in the first quarter. Any lingering doubts about Lock securing the second spot on the depth chart over 2025 third-round pick Jalen Milroe were erased by Milroe's poor second-half performance, as the former Alabama QB threw for just 52 yards with two interceptions.",
+     "shortComment": "Lock completed 12 of 14 passes for 103 yards and a touchdown while rushing twice for eight yards in Sunday's 19-16 preseason loss to the Titans.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Drew Lock",
+      "position": {
+       "abbreviation": "QB"
+      }
+     }
+    },
+    {
+     "id": "634430",
+     "status": "Injured Reserve",
+     "date": "2026-08-22T17:45Z",
+     "longComment": "Bobo sustained a serious knee injury in Friday's joint practice with the Titans. The wide receiver's placement on injured reserve means he will be unable to participate for the Seahawks in the entirety of the 2026 season. With Bobo out of the picture, Tory Horton (undisclosed), Emmanuel Henderson, Montorie Foster and Cody White will have a close competition for starting roles during the remainder of the preseason. The Seahawks also signed wide receiver Julian Hicks in a corresponding move.",
+     "shortComment": "The Seahawks placed Bobo (knee) on injured reserve Saturday, John Boyle of the team's official site reports.",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Jake Bobo",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "-1987401",
+     "status": "Questionable",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "questionable",
+     "shortComment": "questionable",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Emanuel Wilson",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    },
+    {
+     "id": "-1987306",
+     "status": "Injured Reserve",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "ir",
+     "shortComment": "ir",
+     "type": {
+      "id": "5",
+      "name": "INJURY_STATUS_IR",
+      "description": "Injured Reserve",
+      "abbreviation": "IR"
+     },
+     "athlete": {
+      "displayName": "Robbie Ouzts",
+      "position": {
+       "abbreviation": "FB"
+      }
+     }
+    },
+    {
+     "id": "-1987183",
+     "status": "Questionable",
+     "date": "2026-08-19T12:07Z",
+     "longComment": "questionable",
+     "shortComment": "questionable",
+     "type": {
+      "id": "2",
+      "name": "INJURY_STATUS_QUESTIONABLE",
+      "description": "questionable",
+      "abbreviation": "Q"
+     },
+     "athlete": {
+      "displayName": "Nick Emmanwori",
+      "position": {
+       "abbreviation": "S"
+      }
+     }
+    },
+    {
+     "id": "633899",
+     "status": "Active",
+     "date": "2026-08-17T02:03Z",
+     "longComment": "Foster had a five-yard touchdown catch and almost added a 68-yard touchdown to his stat line Saturday, but Drew Lock overthrew to an open Foster down the sideline in a game during which the Seahawks rested most of their starters. Foster's strong preseason debut could help him in his quest to secure a depth role in a Seattle wide receiver room that also includes Jaxon Smith-Njigba, Rashid Shaheed, Cooper Kupp, Tory Horton, Jake Bobo and Emmanuel Henderson. The 25-year-old Foster will look to keep building momentum in Seattle's second preseason game against the Titans on Aug. 23.",
+     "shortComment": "Foster caught five of seven targets for 36 yards and a touchdown in Saturday's 17-7 preseason loss to the Cowboys, building on what has been a strong performance in training camp, John Boyle of the Seahawks' official site reports.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Montorie Foster Jr.",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "633887",
+     "status": "Active",
+     "date": "2026-08-17T00:42Z",
+     "longComment": "Shaheed was among the numerous Seahawks starters that sat out the preseason opener. Montorie Foster took advantage of his expanded role with five catches for 36 yards and a touchdown Saturday. Jaxon Smith-Njigba remains the undisputed No. 1 wide receiver for the Seahawks, while Shaheed, Cooper Kupp, Tory Horton, Jake Bobo and possibly Foster or Emmanuel Henderson will compete for targets behind Smith-Njigba. Shaheed also is projected to maintain his role as the primary return man on special teams.",
+     "shortComment": "Shaheed didn't suit up for Saturday's 17-7 preseason loss to the Cowboys.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "Rashid Shaheed",
+      "position": {
+       "abbreviation": "WR"
+      }
+     }
+    },
+    {
+     "id": "633886",
+     "status": "Active",
+     "date": "2026-08-17T00:36Z",
+     "longComment": "Most of Seattle's starters sat out Saturday's preseason opener, with Barner among them. Backup TEs Elijah Arroyo, Nick Vannett and Nick Kallerup each had one catch Saturday, and Eric Saubert also is competing for a roster spot at the position. Barner seems entrenched atop the depth chart on the heels of a sophomore regular season in which he caught 52 of 68 targets for 519 receiving yards and six touchdowns, though Arroyo was a second-round pick in 2025 and is hoping to earn a larger role in his second season, much like Barner did a year ago.",
+     "shortComment": "Barner was rested for Seattle's 17-7 preseason loss to the Cowboys on Saturday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "AJ Barner",
+      "position": {
+       "abbreviation": "TE"
+      }
+     }
+    },
+    {
+     "id": "633799",
+     "status": "Active",
+     "date": "2026-08-16T03:24Z",
+     "longComment": "Rookie first-round pick Jadarian Price (lower body) did not suit up Saturday, paving the way for Holani's start. The third-year pro finished with team-high figures in rush attempts and rushing yardage, further cementing his status as a top complementary option behind Price and Zach Charbonnet (PUP-knee). Holani could play a key role early in the season given Charbonnet's projected lack of availability, so it remains to be seen how heavily he'll be utilized in a road preseason matchup against the Titans on Sunday, Aug. 23.",
+     "shortComment": "Holani rushed 12 times for 42 yards in the Seahawks' 17-7 preseason loss to the Cowboys on Saturday.",
+     "type": {
+      "id": "0",
+      "name": "INJURY_STATUS_ACTIVE",
+      "description": "active",
+      "abbreviation": "A"
+     },
+     "athlete": {
+      "displayName": "George Holani",
+      "position": {
+       "abbreviation": "RB"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

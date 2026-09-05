@@ -1,0 +1,30 @@
+Matchup: {away_team} at {home_team}
+Kickoff: {kickoff}
+Venue: {venue}
+
+--- {away_team} ---
+Momentum: {away_momentum}
+Storylines:
+{away_storylines}
+Injuries:
+{away_injuries}
+
+--- {home_team} ---
+Momentum: {home_momentum}
+Storylines:
+{home_storylines}
+Injuries:
+{home_injuries}
+
+Based only on the news and injuries above, which team is in better shape going
+into this game?
+
+Rules:
+- Judge only from the information given. No outside knowledge of team quality,
+  records, or reputation.
+- Do not invent players, injuries or results.
+- This is a read on current form and availability, not a prediction of the
+  final score.
+
+news_lean: the team the news favours.
+lean_reason: one sentence naming the specific developments behind that lean.

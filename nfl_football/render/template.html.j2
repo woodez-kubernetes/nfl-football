@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL {{ report.season }} Week {{ report.week }} — Matchup Theses</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #14181f; --muted: #667085;
+    --line: #e4e7ec; --accent: #1f6feb; --upset: #b42318; --upset-bg: #fef3f2;
+    --home: #1f6feb; --away: #667085; --ok: #067647;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --card: #161b22; --ink: #e6edf3; --muted: #8b949e;
+      --line: #30363d; --accent: #58a6ff; --upset: #ff7b72; --upset-bg: #2d1618;
+      --home: #58a6ff; --away: #8b949e; --ok: #3fb950;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+  header h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px; margin-bottom: 16px;
+  }
+  .overview { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  tbody tr:last-child td { border-bottom: none; }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: .03em;
+  }
+  .badge-upset { background: var(--upset-bg); color: var(--upset); }
+  .matchup { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .matchup h2 { margin: 0; font-size: 19px; letter-spacing: -0.01em; }
+  .when { color: var(--muted); font-size: 13px; }
+  .probrow { display: grid; grid-template-columns: 46px 1fr 48px; align-items: center; gap: 10px; margin: 6px 0; }
+  .track { display: block; background: var(--line); border-radius: 999px; height: 9px; overflow: hidden; }
+  /* display:block is load-bearing — as inline spans these collapse to 0x0 and
+     every probability bar renders empty. */
+  .fill { display: block; height: 100%; border-radius: 999px; }
+  .fill.home { background: var(--home); }
+  .fill.away { background: var(--away); }
+  .abbr { font-weight: 700; font-size: 13px; }
+  .pct { text-align: right; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--muted); }
+  .line { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+  .verdict { margin: 18px 0 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid var(--line); }
+  .verdict.upset { border-color: var(--upset); background: var(--upset-bg); }
+  .verdict h3 { margin: 0 0 4px; font-size: 17px; }
+  .compare { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .compare b { color: var(--ink); }
+  .thesis { margin: 12px 0; }
+  h4 { margin: 16px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
+  details { margin-top: 10px; font-size: 13px; }
+  summary { cursor: pointer; color: var(--accent); }
+  details ul { margin-top: 8px; }
+  a { color: var(--accent); }
+  .note { color: var(--muted); font-style: italic; }
+  footer { color: var(--muted); font-size: 12px; margin-top: 32px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>NFL {{ report.season }} · Week {{ report.week }}</h1>
+  <div class="sub">
+    Generated {{ local(report.generated_at).strftime('%d %B %Y, %H:%M %Z') }} ·
+    {{ report.games|length }} games ·
+    {{ report.upset_calls|length }} pick(s) against the market
+    {%- if report.odds_filled_from_nflverse %} · {{ report.odds_filled_from_nflverse }} line(s) from nflverse fallback{% endif %}
+  </div>
+</header>
+
+<div class="card overview">
+  <table>
+    <thead>
+      <tr><th>Game</th><th>Kickoff ({{ tz_label }})</th><th>Market</th><th>News</th><th>Pick</th><th>Conf.</th><th></th></tr>
+    </thead>
+    <tbody>
+    {% for gr in report.games %}
+      <tr>
+        <td><a href="#g{{ gr.game.espn_id }}">{{ gr.game.matchup }}</a></td>
+        <td>{{ local(gr.game.kickoff).strftime('%a %H:%M') }}</td>
+        <td>{{ gr.market_favorite.abbreviation if gr.market_favorite else '—' }}</td>
+        <td>{{ abbr(gr, gr.thesis.news_lean) if gr.thesis and gr.thesis.news_lean else '—' }}</td>
+        <td><b>{{ abbr(gr, gr.thesis.pick) if gr.thesis and gr.thesis.pick else '—' }}</b></td>
+        <td>{{ gr.thesis.confidence if gr.thesis else '—' }}</td>
+        <td>{% if gr.thesis and gr.thesis.is_upset_call %}<span class="badge badge-upset">UPSET</span>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% for gr in report.games %}
+<div class="card" id="g{{ gr.game.espn_id }}">
+  <div class="matchup">
+    <h2>{{ gr.game.away.display_name }} at {{ gr.game.home.display_name }}</h2>
+    <span class="when">{{ local(gr.game.kickoff).strftime('%a %d %b, %H:%M %Z') }}</span>
+  </div>
+  <div class="when">{{ gr.game.venue or 'Venue TBD' }}{% if gr.game.indoor %} · indoor{% endif %}</div>
+
+  {% if gr.probability %}
+    <div style="margin-top:14px">
+      <div class="probrow">
+        <span class="abbr">{{ gr.game.away.abbreviation }}</span>
+        <span class="track"><span class="fill away" style="width: {{ (gr.probability.away * 100)|round(1) }}%"></span></span>
+        <span class="pct">{{ (gr.probability.away * 100)|round|int }}%</span>
+      </div>
+      <div class="probrow">
+        <span class="abbr">{{ gr.game.home.abbreviation }}</span>
+        <span class="track"><span class="fill home" style="width: {{ (gr.probability.home * 100)|round(1) }}%"></span></span>
+        <span class="pct">{{ (gr.probability.home * 100)|round|int }}%</span>
+      </div>
+    </div>
+    <div class="line">{{ line_summary(gr) }}</div>
+  {% else %}
+    <p class="note">No betting line posted for this game.</p>
+  {% endif %}
+
+  {% if gr.thesis is none %}
+    <p class="note">No thesis generated.</p>
+  {% elif gr.thesis.pick is none %}
+    <p class="note">No pick — the model did not return a valid response.</p>
+  {% else %}
+    <div class="verdict {% if gr.thesis.is_upset_call %}upset{% endif %}">
+      <h3>Pick: {{ gr.thesis.pick }}
+        {% if gr.thesis.is_upset_call %}<span class="badge badge-upset">UPSET CALL</span>{% endif %}
+      </h3>
+      <div class="compare">
+        <span>Market: <b>{{ gr.market_favorite.display_name if gr.market_favorite else 'no favourite' }}</b></span>
+        {% if gr.thesis.news_lean %}
+          <span>News alone: <b>{{ gr.thesis.news_lean }}</b>{% if gr.thesis.lean_differs_from_pick %} (differs){% endif %}</span>
+        {% endif %}
+        <span>Confidence: <b>{{ gr.thesis.confidence }}</b></span>
+      </div>
+    </div>
+
+    <p class="thesis">{{ gr.thesis.thesis }}</p>
+
+    {% if gr.thesis.lean_reason %}
+      <h4>What the news alone said</h4>
+      <p class="thesis">{{ gr.thesis.lean_reason }}</p>
+    {% endif %}
+
+    {% if gr.thesis.key_factors %}
+      <h4>Key factors</h4>
+      <ul>{% for f in gr.thesis.key_factors %}<li>{{ f }}</li>{% endfor %}</ul>
+    {% endif %}
+
+    {% if gr.thesis.news_vs_market %}
+      <h4>News vs market</h4>
+      <p class="thesis">{{ gr.thesis.news_vs_market }}</p>
+    {% endif %}
+  {% endif %}
+
+  <div class="cols">
+    {% for brief, team, items in ((gr.away_brief, gr.game.away, gr.away_news), (gr.home_brief, gr.game.home, gr.home_news)) %}
+      <div>
+        <h4>{{ team.abbreviation }}{% if brief and brief.injuries %} · injuries{% endif %}</h4>
+        {% if brief and brief.injuries %}
+          <ul>{% for i in brief.injuries[:6] %}<li>{{ i }}</li>{% endfor %}</ul>
+        {% else %}
+          <p class="note">None reported.</p>
+        {% endif %}
+        {% if items %}
+          <details>
+            <summary>{{ items|length }} sources</summary>
+            <ul>
+              {% for item in items[:10] %}
+                <li><a href="{{ item.link }}" rel="noopener noreferrer" target="_blank">{{ item.title }}</a>
+                  <span class="note">— {{ item.source }}{% if item.published %}, {{ item.published.strftime('%b %d') }}{% endif %}</span></li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+
+<footer>
+  Win probabilities are de-vigged from posted moneylines. Picks are generated by
+  a local language model and are not betting advice.
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+{#
+  Email-safe report body. Deliberately different from template.html.j2:
+
+  * Table layout, not flexbox/grid — Outlook's Word engine supports neither.
+  * Every style inlined; no CSS custom properties (var(--x) is stripped by
+    Gmail and Outlook) and no class selectors, since Gmail's mobile apps drop
+    <style> blocks for non-Gmail accounts.
+  * No <details>/<summary> — unsupported in nearly every mail client.
+  * Fixed light palette. prefers-color-scheme is unreliable in mail.
+  * Kept compact: Gmail clips messages over ~102 KB. Source links live in the
+    attached full report instead of the body.
+  * Probability bars are nested tables with bgcolor, which renders everywhere.
+#}
+<div style="margin:0;padding:0;background-color:#f4f5f7;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f5f7;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+
+<table width="640" cellpadding="0" cellspacing="0" border="0" style="width:640px;max-width:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;word-break:break-word;table-layout:fixed;">
+
+  <tr><td style="padding:0 0 16px 0;">
+    <div style="font-size:24px;font-weight:700;color:#14181f;letter-spacing:-0.3px;">NFL {{ report.season }} &middot; Week {{ report.week }}</div>
+    <div style="font-size:13px;color:#667085;padding-top:4px;">
+      {{ local(report.generated_at).strftime('%d %B %Y, %H:%M %Z') }} &middot;
+      {{ report.games|length }} games &middot;
+      {{ report.upset_calls|length }} pick{{ '' if report.upset_calls|length == 1 else 's' }} against the market
+    </div>
+  </td></tr>
+
+  {# ---------- Week at a glance ---------- #}
+  <tr><td style="padding:0 0 18px 0;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e4e7ec;border-radius:10px;border-collapse:separate;">
+      <tr>
+        <td style="padding:10px 12px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;">Game</td>
+        <td style="padding:10px 8px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;">Kickoff ({{ tz_label }})</td>
+        <td align="center" style="padding:10px 8px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;">Market</td>
+        <td align="center" style="padding:10px 8px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;">News</td>
+        <td align="center" style="padding:10px 8px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;">Pick</td>
+        <td style="padding:10px 12px 10px 8px;font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e4e7ec;"></td>
+      </tr>
+      {% for gr in report.games %}
+      {% set bg = '#ffffff' if loop.index0 % 2 == 0 else '#fafbfc' %}
+      <tr bgcolor="{{ bg }}">
+        <td style="padding:9px 12px;font-size:13px;color:#14181f;font-weight:600;">{{ gr.game.matchup }}</td>
+        <td style="padding:9px 8px;font-size:13px;color:#667085;white-space:nowrap;">{{ local(gr.game.kickoff).strftime('%a %H:%M') }}</td>
+        <td align="center" style="padding:9px 8px;font-size:13px;color:#667085;">{{ gr.market_favorite.abbreviation if gr.market_favorite else '&mdash;' }}</td>
+        <td align="center" style="padding:9px 8px;font-size:13px;color:#667085;">{{ abbr(gr, gr.thesis.news_lean) if gr.thesis and gr.thesis.news_lean else '&mdash;' }}</td>
+        <td align="center" style="padding:9px 8px;font-size:13px;color:#14181f;font-weight:700;">{{ abbr(gr, gr.thesis.pick) if gr.thesis and gr.thesis.pick else '&mdash;' }}</td>
+        <td style="padding:9px 12px 9px 8px;">
+          {% if gr.thesis and gr.thesis.is_upset_call %}<span style="background-color:#fef3f2;color:#b42318;font-size:10px;font-weight:700;padding:2px 7px;border-radius:9px;">UPSET</span>{% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </td></tr>
+
+  {# ---------- Per-game cards ---------- #}
+  {% for gr in report.games %}
+  <tr><td style="padding:0 0 14px 0;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #e4e7ec;border-radius:10px;border-collapse:separate;">
+      <tr><td style="padding:18px 20px;">
+
+        <div style="font-size:17px;font-weight:700;color:#14181f;line-height:1.35;">{{ gr.game.away.display_name }} at {{ gr.game.home.display_name }}</div>
+        <div style="font-size:12px;color:#667085;padding-top:3px;">
+          {{ local(gr.game.kickoff).strftime('%a %d %b, %H:%M %Z') }}
+          {%- if gr.game.venue %} &middot; {{ gr.game.venue }}{% endif %}
+          {%- if gr.game.indoor %} &middot; indoor{% endif %}
+        </div>
+
+        {% if gr.probability %}
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="padding-top:12px;">
+          {% for side, team, pct, colour in (
+                ('away', gr.game.away, gr.probability.away, '#98a2b3'),
+                ('home', gr.game.home, gr.probability.home, '#1f6feb')) %}
+          <tr>
+            <td width="46" style="font-size:12px;font-weight:700;color:#14181f;padding:3px 0;">{{ team.abbreviation }}</td>
+            <td style="padding:3px 8px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
+                <tr style="font-size:0;line-height:0;">
+                  <td width="{{ (pct * 100)|round|int }}%" bgcolor="{{ colour }}" style="height:9px;border-radius:5px;">&nbsp;</td>
+                  <td bgcolor="#e9ebef" style="height:9px;border-radius:5px;">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+            <td width="42" align="right" style="font-size:12px;color:#667085;padding:3px 0;">{{ (pct * 100)|round|int }}%</td>
+          </tr>
+          {% endfor %}
+        </table>
+        <div style="font-size:11px;color:#98a2b3;padding-top:8px;">{{ line_summary(gr) }}</div>
+        {% else %}
+        <div style="font-size:13px;color:#667085;font-style:italic;padding-top:10px;">No betting line posted.</div>
+        {% endif %}
+
+        {% if gr.thesis and gr.thesis.pick %}
+        <div style="margin-top:14px;padding:12px 14px;border-radius:8px;
+            {%- if gr.thesis.is_upset_call %}background-color:#fef3f2;border:1px solid #f5c9c4;{% else %}background-color:#f8f9fb;border:1px solid #e4e7ec;{% endif %}">
+            <div style="font-size:15px;font-weight:700;color:{% if gr.thesis.is_upset_call %}#b42318{% else %}#14181f{% endif %};">
+              Pick: {{ gr.thesis.pick }}{% if gr.thesis.is_upset_call %}
+              <span style="background-color:#b42318;color:#ffffff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:9px;margin-left:6px;white-space:nowrap;">UPSET CALL</span>{% endif %}
+            </div>
+            <div style="font-size:12px;color:#667085;padding-top:5px;line-height:1.6;">
+              Market: <b style="color:#14181f;">{{ gr.market_favorite.display_name if gr.market_favorite else 'no favourite' }}</b>
+              &nbsp;&middot;&nbsp; News alone: <b style="color:#14181f;">{{ gr.thesis.news_lean or 'n/a' }}</b>
+              &nbsp;&middot;&nbsp; Confidence: <b style="color:#14181f;">{{ gr.thesis.confidence }}</b>
+            </div>
+        </div>
+
+        <div style="font-size:14px;color:#14181f;line-height:1.6;padding-top:12px;">{{ gr.thesis.thesis }}</div>
+
+        {% if gr.thesis.key_factors %}
+        <div style="font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;padding-top:14px;">Key factors</div>
+        <div style="font-size:13px;color:#344054;line-height:1.55;padding-top:4px;">
+          {% for factor in gr.thesis.key_factors %}&bull;&nbsp;{{ factor }}<br>{% endfor %}
+        </div>
+        {% endif %}
+
+        {% if gr.thesis.news_vs_market and not compact %}
+        <div style="font-size:11px;font-weight:700;color:#667085;text-transform:uppercase;letter-spacing:0.5px;padding-top:14px;">News vs market</div>
+        <div style="font-size:13px;color:#344054;line-height:1.55;padding-top:4px;">{{ gr.thesis.news_vs_market }}</div>
+        {% endif %}
+
+        {% elif gr.thesis %}
+        <div style="font-size:13px;color:#667085;font-style:italic;padding-top:12px;">No pick &mdash; the model did not return a valid response.</div>
+        {% else %}
+        <div style="font-size:13px;color:#667085;font-style:italic;padding-top:12px;">No thesis generated.</div>
+        {% endif %}
+
+        {# Injuries: compact lines. The attached report has the full list. #}
+        {% for brief, team in ((gr.away_brief, gr.game.away), (gr.home_brief, gr.game.home)) %}
+        {% if brief and brief.injuries and not compact %}
+        <div style="font-size:12px;color:#344054;line-height:1.55;padding-top:8px;">
+          <b style="color:#667085;">{{ team.abbreviation }}</b> {{ brief.injuries[:3]|join('; ') }}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+      </td></tr>
+    </table>
+  </td></tr>
+  {% endfor %}
+
+  <tr><td style="padding:8px 4px 0 4px;">
+    <div style="font-size:11px;color:#98a2b3;line-height:1.6;text-align:center;">
+      Win probabilities are de-vigged from posted moneylines and computed directly, not by the model.
+      Picks come from a local language model and are not betting advice.<br>
+      The attached <b>report.html</b> has the full version with all source headlines linked.
+    </div>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
+</div>

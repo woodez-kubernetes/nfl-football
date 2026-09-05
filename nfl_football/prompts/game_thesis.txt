@@ -1,0 +1,40 @@
+Matchup: {away_team} at {home_team}
+Kickoff: {kickoff}
+Venue: {venue}
+
+Your own read of the news, made before you saw any betting line:
+{news_lean}
+
+Betting market:
+{market}
+
+--- {away_team} ---
+Momentum: {away_momentum}
+Storylines:
+{away_storylines}
+Injuries:
+{away_injuries}
+
+--- {home_team} ---
+Momentum: {home_momentum}
+Storylines:
+{home_storylines}
+Injuries:
+{home_injuries}
+
+Decide who wins this game and argue the case.
+
+Rules:
+- You may pick either team. You are not required to agree with the market.
+- Your news read above is real evidence. If it disagrees with the market, decide
+  which is better supported and say why — do not default to the market.
+- If you disagree with the market, say plainly why the news outweighs it.
+- Use only the information above. Do not invent players, injuries or results.
+- Reference specific storylines or injuries rather than generalities.
+
+pick: the team you believe wins.
+thesis: 2-4 sentences arguing the case.
+key_factors: the 3-4 concrete things that decide this game. Keep each to one
+  short clause of at most 15 words — longer entries are cut off mid-sentence.
+news_vs_market: one sentence on whether the news supports or contradicts the
+betting market's view.
